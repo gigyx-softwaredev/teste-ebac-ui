@@ -4,7 +4,7 @@ import { eq } from "lodash";
 
 describe('Funcionalidade: produtos', () => {
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
+        cy.visit('produtos')
     });
     it('', () => {
         cy.get('.product-block')
