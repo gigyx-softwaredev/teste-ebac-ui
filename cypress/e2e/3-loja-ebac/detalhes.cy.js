@@ -12,7 +12,7 @@ describe('Funcionalidade: Detalhes da conta', () =>{
         
     });
 
-    it.only('Deve completar detalhes da conta com sucesso', () =>{
+    it('Deve completar detalhes da conta com sucesso', () =>{
         cy.detalhesConta('Giovanna', 'Carvalho','gi.qa')
        
 
