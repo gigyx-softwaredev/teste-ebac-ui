@@ -26,10 +26,15 @@ describe('Funcionalidade: produtos', () => {
 });
 
     it('Deve visitar a página do produto',() =>{
+
+        produtosPage.visitarProduto('Atlas-Fitness-Tank')
+        cy.get('.product_title').should('contain', 'Atlas Fitness Tank')
         
     })
 
-    it('Deve adicionar produto ao carrinho',() =>{
-        
+    it.only('Deve adicionar produto ao carrinho',() =>{
+
+        produtosPage.buscarProduto('Atlas Fitness Tank')
+        produtosPage.addCarrinho()        
     })
 });
